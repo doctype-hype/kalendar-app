@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    margin-left: 80px;
+    padding: 0;
+    background-color: #23272e;
+    max-width: 100%;
+    overflow-x: hidden;
+    transition: background-color 0.3s;
+    z-index: 0;
+    font-family: "Montserrat";
+    font-size: 18pt;
+  }
+
+  h2{
+    font-family: "Montserrat";
+    color: white;
+    font-size: 21pt;
+    padding-bottom: 30px;
+  }
+
+  p{
+    font-family: "Montserrat";
+    color: white;
+    font-size: 14pt;
+  }
+
+#main {
+  transition: margin-left .3s;
+  z-index: 0;
+  margin-left: 80px;
+}
+
+.content{
+	z-index: 0;
+}
+
+.overlayep {
+  height: 100%;
+  width: 80px;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: #191d24;
+  overflow-x: hidden;
+  transition: 0.4s;
+}
+
+.overlay-content {
+  position: relative;
+  width: 100%;
+  margin-top: 120px;
+  font-family: 'Montserrat';
+  font-size: 15pt;
+  font-weight: 600;
+  margin-left: 5%;
+  text-decoration: none;
+  transition: 0.2s;
+  z-index: 1;
+
+
+}
+
+.overlay-content li {
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0.2em;
+  padding-top: 10px;
+  height: 100px;
+
+}
+
+.overlay a, .overlayep a {
+  text-decoration: none;
+  font-size: 15pt;
+  color: #08D9D6;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #FF2E63;
+}
+
+.overlayep a:hover, .overlayep a:focus {
+  color: #FF2E63;
+}
+
+.menuList{
+	margin-left: 32px;
+}
+
+.icon{
+	margin-left: -56px;
+}
+
+.botaomenu {
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 26px;
+  margin-top: 20px; 
+  z-index: 1;
+  position: absolute;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 25px;
+  height: 5px;
+  background-color: #FF2E63;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+/*end of menu css*/
+
+
+/* input menu button */
+
+button: focus{
+	outline: none;
+	border: 0px;
+
+}
+
+.btn: focus{
+	outline: none;
+	border: 0px;
+}
+
+.button{
+	width: 64px;
+	height: 60px;
+	border-radius: 64px;
+	background-color: #08D9D6; 
+	color: #fff;
+	border:  0px;
+	transition: 0.3s background-color;
+	position: relative;
+	margin-bottom: 60px;
+
+}
+.button:hover{
+	background-color: #FF2E63;
+	outline: none;
+}
+.button:focus{	
+	outline: none;
+}
+
+input[type=submit] {
+  width: 72px;
+	height: 34px;
+	border-radius: 20px;
+	background-color: #08D9D6;
+	color: #fff;
+	border:  0px;
+	transition: 0.3s background-color;
+	position: relative;
+	text-align: center;
+	margin: 12px;
+	margin-left: -20px;
+	margin-right: 0;
+}
+
+input[type=submit]:hover{
+	background-color: #FF2E63;
+	outline: none;
+}
+
+input[type=submit]:focus{
+	outline: none;
+}
+
+
+#lozinka{
+  margin-top: 50px;
+}
+
+#shiftContent{
+	
+}
+
+#filterTitle{
+	font-size: 11pt;
+	font-family: "Montserrat";
+	color: white;
+	margin-top:-160px;
+	margin-left: -30px;
+}
+
+
+.collapse{
+	width: 100%;
+	position: absolute;
+	margin-top: 45px;
+	
+}
+
+label{
+	font-size: 12pt;
+	width: 120px;
+	color: #EAEAEA;
+	margin-right: 40px;
+	margin-left: 0px;
+	padding-top: 10px;
+  margin-top: 0px;
+}
+
+#labelRadio{
+  font-size: 12pt;
+  color: #EAEAEA;
+  margin-left: 0px;
+  padding-top: 10px;
+  margin-top: -30px;
+}
+
+
+input[type="radio"] {
+    background-color: #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    height: 15px;
+    margin-right: 0px;
+    margin-left: -20px;
+    position: relative;
+    width: 15px;
+    -webkit-appearance: none;
+    margin-top: 40px;
+}
+input[type="radio"]:after {
+    background-color: #ddd;
+    border-radius: 25px;
+    content: '';
+    display: block;
+    height: 7px;
+    left: 4px;
+    position: relative;
+    top: 4px;
+    width: 7px;
+}
+input[type="radio"]:checked:after {
+    background-color: #FF2E63;
+}
+
+/* input menu end*/
+
+
+.divider{
+	padding-bottom: 60px;
+}
+
+input,
+{
+  width: 100%;
+  line-height: 1.4;
+  background-color: #f9f9f9;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  -webkit-transition: 0.35s ease-in-out;
+  -moz-transition: 0.35s ease-in-out;
+  -o-transition: 0.35s ease-in-out;
+  transition: 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+   box-sizing: border-box;
+}
+
+td{
+	height: 25%;
+	background-color: #23272e;
+	padding-left: 20px;
+	padding-right: 20px;
+	z-index: 0;
+	color: #EAEAEA;
+	width: 100%;
+
+}
+
+table{
+	background-color: #23272e;
+	border-collapse: collapse;
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 0;
+}
+
+th{
+	text-align: center;
+	padding-top: 15px;
+	width:100%;
+	z-index: 0;
+	color: #EAEAEA;
+}
+
+.infoStanje{
+	font-size: 11pt;
+	font-family: 'Montserrat';
+	text-align: left;
+}
+
+/*profilna*/
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0);
+  max-width: 600px;
+  margin: auto;
+  font-family: 'Montserrat';
+  background-color: #08D9D6 ;
+  padding: 2px;
+}
+
+#profilna_ime{
+	text-shadow: -1px -1px 0 #fff , 1px -1px 0 #fff , -1px 1px 0 #fff , 1px 1px 0 #fff ;
+	color: #fff; 
+}
+
+.title {
+  color: #000 ;
+  font-size: 19px;
+  /* text-shadow: -1px -1px 0 #fff , 1px -1px 0 #fff , -1px 1px 0 #fff , 1px 1px 0 #fff ; */
+}
+
+.buttonProfilna {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 12px;
+  color: white;
+  background-color: #FF2E63;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  transition: background-color  0.5s;
+  margin-bottom: -16px;
+  margin-top: 30px;
+  outline: none;
+	border: 0px;
+}
+
+.aProfilna {
+  text-decoration: none;
+  font-size: 22px;
+  color: #191d24;
+  padding-left: 20px;
+}
+
+.buttonProfilna:hover{
+  background-color: #08D9D6;
+  outline: none;
+	border: 0px;
+}
+
+.buttonProfilna:focus{
+  outline: none;
+	border: 0px;
+}
+
+
+.fotoProfilna{
+	 width:100%;
+	 object-fit: cover; 
+	 max-height: 350px;
+}
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+  width: 10px; 
+  height: 10px; 
+}
+::-webkit-scrollbar-thumb { 
+  background: #999;
+}
+::-webkit-scrollbar-track { 
+  background: #333;
+}
